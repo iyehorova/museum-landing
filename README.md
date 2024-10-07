@@ -16,7 +16,7 @@ This is a responsive landing page for the NAMU Art Museum. The page is designed 
 - **Footer**: The footer contains contact information, including the museum's schedule, which is also displayed in the navigation menu.
 
 ## Technologies Used
-- **HTML & CSS**: The landing page is built using semantic HTML5 and modern CSS.
+- **HTML & SCSS**: The landing page is built using semantic HTML5 and modern SCSS.
 - **BEM Methodology**: Block-Element-Modifier (BEM) is used to structure CSS for better maintainability and scalability.
 - **CSS Grid**: The layout is organized using CSS Grid, ensuring flexibility and precise control over content positioning.
 
