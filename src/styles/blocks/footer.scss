@@ -1,0 +1,174 @@
+.footer {
+  padding-block: 50px 56px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $main-color;
+
+  @include layout-grid;
+
+  @include on-tablet {
+    padding-top: 51px;
+  }
+
+  @include on-desktop {
+    padding-top: 48px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/-1;
+
+    @include on-tablet {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 62px;
+      grid-column: 1;
+    }
+  }
+
+  /* #region  footer icon */
+  &__logo {
+    font-size: 36px;
+    transform-origin: left;
+  }
+
+  &__social-media {
+    display: flex;
+    gap: 20px;
+
+    @include on-tablet {
+      gap: 32px;
+    }
+
+    @include on-desktop {
+      gap: auto;
+      justify-content: space-between;
+    }
+  }
+
+  &__facebook-logo {
+    background: url(../images/icons/icon-facebook-logo.svg) no-repeat center;
+  }
+
+  &__instagram-logo {
+    background: url(../images/icons/icon-instagram-logo.svg) no-repeat center;
+  }
+
+  /* #endregion */
+
+  &__schedule {
+    @include on-tablet {
+      grid-column: 2 / span 2;
+    }
+
+    @include on-desktop {
+      grid-column: 3 / span 2;
+    }
+  }
+
+  &__contacts {
+    @include on-tablet {
+      grid-column: 4 / span 2;
+    }
+
+    @include on-desktop {
+      grid-column: 5 / span 2;
+    }
+  }
+
+  &__section-title {
+    margin: 0;
+    margin-top: 40px;
+    font-size: inherit;
+    font-weight: normal;
+    line-height: 1.4;
+
+    @include on-tablet {
+      margin-top: 0;
+    }
+  }
+
+  &__arrow {
+    width: 50px;
+    aspect-ratio: 1;
+    border: 1px solid $accent-color;
+    border-radius: 50%;
+    background: url(../images//icons/icon-arrow-up.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 2;
+    justify-self: end;
+
+    @include on-tablet {
+      display: none;
+    }
+  }
+
+  &__nav {
+    margin-top: 15px;
+    padding-top: 40px;
+    border-top: 1px solid $accent-color;
+    grid-column: 1/-1;
+
+    @include on-tablet {
+      margin-top: 87px;
+      padding-top: 60px;
+      grid-column: 2 / span 4;
+    }
+
+    @include on-desktop {
+      margin-top: 0;
+      margin-left: 32px;
+      padding-left: 65px;
+      padding-top: 0;
+      border-top: none;
+      border-left: 1px solid $accent-color;
+      grid-column: 7 / span 4;
+    }
+  }
+
+  &__bottom {
+    margin-top: 75px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.4;
+
+    display: grid;
+    row-gap: 10px;
+
+    grid-column: 1/-1;
+
+    @include on-tablet {
+      @include layout-grid;
+    }
+
+    @include on-desktop {
+      margin-top: 85px;
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    text-align: center;
+
+    @include on-tablet {
+      &--designer {
+        grid-column: -3/-1;
+      }
+
+      &--rights {
+        text-align: left;
+        grid-column: 1 / span 2;
+        grid-row: 1;
+      }
+    }
+
+    @include on-desktop {
+      &--rights {
+        grid-column: 1 / span 3;
+      }
+    }
+  }
+}

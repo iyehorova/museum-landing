@@ -1,0 +1,69 @@
+.schedule {
+  &__list {
+    margin: 0;
+    margin-top: 20px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__time {
+    font-weight: 600;
+  }
+
+  &__info {
+    margin: 0;
+    margin-top: 20px;
+
+    // @include on-tablet
+  }
+}
+
+.schedule-menu {
+  font-family: "IBM Plex Sans";
+
+
+
+  @include on-tablet{
+    --column: 2;
+
+    grid-column: 4/-1;
+
+    display: grid;
+    grid-template-columns: repeat(var(--column), 1fr);
+    column-gap: 20px;
+  }
+
+  @include on-desktop{
+    grid-column: 8/12;
+  }
+
+  &__title{
+    margin-top: 24px;
+    font-size: 14px;
+    font-style: normal;
+
+    @include on-tablet{
+      margin-top: 0;
+    }
+  }
+
+  &__list {
+    margin-top: 20px;
+    margin-top: 20px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__time {
+    font-weight: 600;
+  }
+
+  &__info {
+    margin-top: 20px;
+
+    // @include on-tablet
+  }
+  &__info-accent {
+    font-weight: 600;
+  }
+}

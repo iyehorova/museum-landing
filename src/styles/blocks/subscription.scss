@@ -1,0 +1,105 @@
+.subscription {
+  @include layout-grid;
+
+  &__title {
+    margin-top: 88px;
+    color: $white-color;
+    grid-column: 1/-1;
+
+    @include on-tablet {
+      margin-top: 82px;
+      text-align: center;
+    }
+
+    @include on-desktop {
+      margin-top: 163px;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    margin-top: 20px;
+    color: $white-color;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    grid-column: 1/-1;
+
+    @include on-tablet {
+      margin-top: 16px;
+      line-height: 1;
+      text-align: left;
+      grid-column: 2/-2;
+    }
+
+    @include on-desktop {
+      text-align: center;
+      grid-column: 4 / span 6;
+    }
+  }
+
+  &__form {
+    --form-height: 50px;
+
+    margin-top: 50px;
+    width: 100%;
+    height: var(--form-height);
+
+    display: flex;
+    grid-column: 1/-1;
+
+    @include on-tablet {
+      --form-height: 70px;
+
+      margin-top: 64px;
+      gap: 16px;
+      grid-column: 2/-2;
+    }
+
+    @include on-desktop {
+      margin-top: 72px;
+      gap: 30px;
+      grid-column: 4 / span 6;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+
+    @include reset-padding-border;
+
+    padding-left: 24px;
+    outline: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: $detail-color;
+
+    flex-grow: 1;
+    height: 100%;
+
+    @include on-desktop {
+      padding-left: 32px;
+    }
+  }
+
+  &__button {
+    @include reset-padding-border;
+
+    height: 100%;
+    aspect-ratio: 1;
+    background: $square-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: url(../images/icons/icon-arrow-black.svg);
+    }
+
+    &:hover::after {
+      @include arrow-animation;
+    }
+  }
+}

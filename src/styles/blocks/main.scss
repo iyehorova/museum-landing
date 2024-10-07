@@ -1,0 +1,97 @@
+.main {
+  margin: 0;
+
+  @include layout-grid;
+
+  &__section {
+    grid-column: 1/-1;
+
+    &--events {
+      margin-top: 70px;
+
+      @include on-tablet {
+        margin-top: 88px;
+      }
+
+      @include on-desktop {
+        margin-top: 200px;
+      }
+
+      .main__section-content {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        @include on-tablet {
+          gap: 64px;
+        }
+
+        @include on-desktop {
+          gap: 104px;
+        }
+      }
+    }
+    &--galery {
+      margin-top: 100px;
+
+      @include on-tablet {
+        margin-top: 88px;
+      }
+
+      @include on-desktop {
+        margin-top: 200px;
+      }
+    }
+
+    &--subscription {
+      --subscription-height: 386px;
+
+      margin-top: 100px;
+      padding-bottom: 88px;
+
+      @include on-tablet {
+        --subscription-height: 380px;
+
+        margin-top: 92px;
+        padding-bottom: 82px;
+      }
+
+      @include on-desktop {
+        --subscription-height: 550px;
+
+        margin-top: 200px;
+        padding-bottom: 163px;
+      }
+
+      &::before {
+        content: '';
+        background: url(../images/footer-bg.jpg), #000000bf;
+        background-blend-mode: color;
+        background-position: center;
+        background-size: cover;
+
+        display: block;
+        width: 100%;
+        height: var(--subscription-height);
+
+        position: absolute;
+        left: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__section-title {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+
+    @include on-tablet {
+      font-size: 48px;
+      text-align: left;
+    }
+  }
+}
