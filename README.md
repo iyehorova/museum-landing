@@ -22,4 +22,4 @@ This is a responsive landing page for the NAMU Art Museum. The page is designed 
 
 ## How to View
 
-[DEMO LINK](https://iyrhorova.github.io/museum-landing/)
+[DEMO LINK](https://iyehorova.github.io/museum-landing/)
