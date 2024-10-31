@@ -1,4 +1,7 @@
 # NAMU Art Museum Landing Page
+
+[DEMO LINK](https://iyrhorova.github.io/museum-landing/)
+
 This is a responsive landing page for the NAMU Art Museum. The page is designed to work seamlessly across all screen sizes, featuring a burger menu for navigation and optimized images for better performance.
 
 ## Features
@@ -20,6 +23,3 @@ This is a responsive landing page for the NAMU Art Museum. The page is designed 
 - **BEM Methodology**: Block-Element-Modifier (BEM) is used to structure CSS for better maintainability and scalability.
 - **CSS Grid**: The layout is organized using CSS Grid, ensuring flexibility and precise control over content positioning.
 
-## How to View
-
-[DEMO LINK](https://iyrhorova.github.io/museum-landing/)

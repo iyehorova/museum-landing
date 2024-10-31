@@ -14,7 +14,6 @@
   grid-row: var(--galery-photo-height);
   grid-auto-flow: column;
   column-gap: 16px;
-  // transition: transform 0.5s ease;
 
   @include on-tablet {
     --galery-photo-width: 340px;
@@ -38,26 +37,25 @@
     padding: 0;
     transform: scaleX(-1);
 
-    // width: var(--galery-photo-width);
-    // flex-shrink: 0;
-
-
     &--tall {
       @include on-desktop {
         grid-column: 1 / span 4;
       }
     }
+
     &--big {
       @include on-desktop {
         grid-column: 5/-1;
       }
     }
+
     &--wide {
       @include on-desktop {
         grid-column: 1 / span 8;
         grid-row: 2;
       }
     }
+    
     &--small {
       @include on-desktop {
         grid-column: 9/-1;
